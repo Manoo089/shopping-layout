@@ -13,8 +13,6 @@ body {
 .card {
     position: relative;
     width: 50vmin;
-    height: 70vmin;
-    border: 1px solid black;
     border-radius: 1rem;
     background-color: white;
     overflow: hidden;
@@ -26,7 +24,7 @@ body {
     right: 0;
     z-index: 1;
     background-color: #c6d1d6;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     margin-top: 1rem;
     margin-right: 1rem;
 }
@@ -48,10 +46,96 @@ body {
     bottom: 1px;
     left: 0;
     width: 100%;
-    height: 40%;
+    height: 70%;
     background: linear-gradient( to top, rgba(255, 255, 255, 1), transparent, transparent);
 }
 
 .card__header__image {
     width: 100%;
+}
+
+.card__description {
+    padding: 1rem 1rem;
+}
+
+.card__description__heading {
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.card__description__content {
+    color: #9c9c9c;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.card__selection {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 1rem;
+}
+
+.card__selection__price {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 0.8rem 0;
+    text-align: center;
+    margin: 0;
+}
+
+.card__selection__options-container {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    color: #373737d3;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.card__selection__select {
+    width: 6vmin;
+    height: 2.5vmin;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 0.2rem;
+    margin-left: 1rem;
+}
+
+.card__selection__color-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.color__circle {
+    width: 2.5vmin;
+    height: 2.5vmin;
+    border-radius: 50%;
+}
+
+.blue {
+    background-color: #1f55af;
+}
+
+.red {
+    background-color: #da4841;
+}
+
+.black {
+    background-color: black;
+}
+
+.add__button {
+    width: 100%;
+    background-color: #485fb9;
+    color: whitesmoke;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 0;
+    margin-top: 1rem;
 }

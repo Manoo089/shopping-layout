@@ -32,36 +32,36 @@
 
             <footer class="card__selection">
                 <p class="card__selection__price">$65 USD</p>
-                <div class="card__selection__size-quantity">
-                    <p class="card__selection__size">
-                        Size:
-                        <span>
-                <select class="card__selection__select" name="size">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                </select>
-              </span>
-                    </p>
-
-                    <p class="card__selection__quantity">
-                        Quantity:
-                        <span>
-                <select class="card__selection__select" name="quantity">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
-              </span>
-                    </p>
+                <div class="card__selection__options-container">
+                    <div class="card__selection__options">
+                        <label for="size">Size:</label>
+                        <select class="card__selection__select" name="size">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+                    </div>
+                    <div class="card__selection__options">
+                        <label for="quantity">Quantity:</label>
+                        <select class="card__selection__select" name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+                    </div>
                 </div>
 
-                <p>Color:</p>
+                <div class="card__selection__color-container">
+                    <p>Color:</p>
+                    <div class="color__circle blue"></div>
+                    <div class="color__circle red"></div>
+                    <div class="color__circle black"></div>
+                </div>
 
-                <button>Add to Cart</button>
+                <button class="add__button">Add to Cart</button>
             </footer>
         </article>
     </main>
