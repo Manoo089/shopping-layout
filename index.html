@@ -2,65 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <title>Shopping-Layout</title>
 </head>
 
 <body>
     <main>
-        <article>
-            <aside>
+        <article class="card">
+            <aside class="card__info">
                 <div>
-                    <p>Free Shipping!</p>
+                    <p class="card__info-text">Free Shipping!</p>
                 </div>
             </aside>
-            <header>
-                <img src="img/blue_sport_shoes.jpg" alt="Blaue Sport Schuhe">
+            <header class="card__header">
+                <img class="card__header__image" src="img/blue_sport_shoes.jpg" />
             </header>
-
-            <h2>Asics</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere fugit quod illum eligendi veritatis autem saepe! Deleniti cumque possimus libero architecto debitis. Eum nobis expedita sapiente? Soluta, aperiam totam vero veniam voluptatibus
-                alias autem cupiditate, fuga optio magnam nihil ad rerum ipsum dolores accusantium asperiores perferendis pariatur unde sunt incidunt ratione tempora velit! Omnis exercitationem porro qui quis saepe ab vel assumenda debitis maxime, explicabo
-                voluptatum quae odio tenetur. Consectetur quidem deleniti quo veniam, vel expedita voluptatibus temporibus magni repudiandae excepturi nostrum dolorem? Sapiente exercitationem dolores deleniti placeat ex sit molestias consectetur laborum?
-                Dicta cumque consequuntur tempore repudiandae ullam?</p>
-
-            <footer>
-                <p>$65 USD</p>
-                <p>Size:
-                    <span>
-                        <select name="size">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                        </select>
-                    </span>
+            <section class="card__description">
+                <h2 class="card__description__heading">Asics</h2>
+                <p class="card__description__content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facere fugit quod illum eligendi veritatis autem saepe! Deleniti cumque possimus libero architecto debitis...
                 </p>
+            </section>
 
-                <p>Quantity:
-                    <span>
-                        <select name="quantity">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </span>
-                </p>
+            <footer class="card__selection">
+                <p class="card__selection__price">$65 USD</p>
+                <div class="card__selection__size-quantity">
+                    <p class="card__selection__size">
+                        Size:
+                        <span>
+                <select class="card__selection__select" name="size">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                </select>
+              </span>
+                    </p>
+
+                    <p class="card__selection__quantity">
+                        Quantity:
+                        <span>
+                <select class="card__selection__select" name="quantity">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </span>
+                    </p>
+                </div>
 
                 <p>Color:</p>
 
                 <button>Add to Cart</button>
-
             </footer>
-
         </article>
     </main>
 </body>
